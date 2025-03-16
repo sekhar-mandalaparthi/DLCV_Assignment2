@@ -2,13 +2,7 @@ import torch
 import torch.nn as nn
 
 class PatchEmbedding(nn.Module):
-    """Turns a 2D input image into a 1D sequence learnable embedding vector.
-
-    Args:
-        in_channels (int): Number of color channels for the input images. Defaults to 3.
-        patch_size (int): Size of patches to convert input image into. Defaults to 16.
-        embedding_dim (int): Size of embedding to turn image into. Defaults to 768.
-    """
+    """Turns a 2D input image into a 1D sequence learnable embedding vector."""
     
     def __init__(self,
                  in_channels:int=3,
